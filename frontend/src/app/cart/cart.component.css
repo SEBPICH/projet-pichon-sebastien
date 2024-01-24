@@ -1,0 +1,116 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  font-family: 'San Francisco', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #a6051a;
+  font-weight: bolder;
+  margin-left: 0.5em;
+}
+
+h5 {
+  font-weight:normal;
+  margin: 0.5em;
+}
+
+#catalog img {
+  object-fit: cover;
+  width: 200px;
+  max-height: 150px;
+}
+
+.product-info {
+  text-align: right;
+  margin-right: 20px; /* Adjust this margin as needed */
+}
+
+p {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#catalog {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Add this line to align items on the left and right */
+}
+
+button {
+  background-color: #a6051a;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: #111 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#delete {
+  background-color: #111;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: #111 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#delete:hover {
+  background-color: #a6051a;
+  color: #fff;
+  border: #111 2px solid;
+}
+
+#payment {
+  background-color: #62c055;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: #111 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#payment:hover {
+  background-color: #62c055;
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+button:hover {
+  background-color: #a6051a;
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+#MessageDelete {
+  background-color: #a6051a;
+  color: white;
+  display: flex;
+  font-size: larger;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+}

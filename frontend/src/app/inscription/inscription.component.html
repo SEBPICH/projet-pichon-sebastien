@@ -1,0 +1,62 @@
+<h1>Inscription</h1>
+
+<form id="connection" [formGroup]="connection" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="nom">NOM:</label>
+        <input type="text" id="nom" name="nom" formControlName="nom" placeholder="Ex. : DUPONT" required minlength="1" maxlength="50" class="form-control"/>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" formControlName="prenom" placeholder="Ex. : Louis" required minlength="1" maxlength="50" class="form-control"/>
+    </div>
+<br/>
+    <div>
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse" formControlName="adresse" placeholder="Numéro et voie" required minlength="1" maxlength="99" class="form-control"/>
+    </div>
+
+    <label for="codepostal">Code Postal:</label>
+    <input type="text" id="codepostal" name="codepostal" formControlName="codepostal" placeholder="Ex. : 67000" class="form-control"/>
+    <div *ngIf="connection.get('codepostal')?.invalid">
+        <div class="error-message">Le code postal doit être composé de 5 chiffres</div>
+    </div>
+
+    <div>
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville" formControlName="ville" placeholder="Ex. : Strasbourg" required minlength="1" maxlength="99" class="form-control"/>
+    </div>
+<br/>
+    <label for="telephone">Téléphone:</label>
+    <input type="tel" id="telephone" name="telephone" formControlName="telephone" placeholder="Ex. : 0612345678" class="form-control"/>
+    <div *ngIf="connection.get('telephone')?.invalid">
+        <div class="error-message">Le numéro de téléphone doit être au format 0612345678</div>
+    </div>
+<br/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" formControlName="email" placeholder="Ex. : adressemail@gmail.com" class="form-control"/>
+    <div *ngIf="connection.get('email')?.invalid">
+        <div class="error-message">L'adresse e-mail doit être valide</div>
+    </div>
+<br/>
+    <div>
+        Civilité:
+        <input type="radio" name="civilite" value="femme" id="civilitefemme" class="form-check-input"> <label for="civilitefemme" class="form-check-label">Femme</label>
+        <input type="radio" name="civilite" value="homme" id="civilitehomme" class="form-check-input"> <label for="civilitehomme" class="form-check-label">Homme</label>
+        <input type="radio" name="civilite" value="autre" id="civiliteautre" class="form-check-input"> <label for="civiliteautre" class="form-check-label">Autre</label>
+    </div>
+<br/>
+    <div>
+        <label for="login">Identifiant:</label>
+        <input type="text" id="login" name="login" formControlName="login" required minlength="1" maxlength="99" class="form-control"/>
+    </div>
+
+    <div>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" formControlName="password" required minlength="1" maxlength="99" class="form-control"/>
+    </div>
+<br/>
+    <button id="button" type="button" (click)="retourAccueil()">Retour à l'accueil</button>
+    <button type="submit" id="envoiformulaire" class="btn btn-primary">Envoyer</button>
+</form>
+<div class="redirection" *ngIf="enableMessage">
+    Vous allez être rediriger vers la page de connexion. Veuillez patienter quelques secondes.
+</div>

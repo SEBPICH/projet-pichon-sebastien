@@ -1,0 +1,10 @@
+
+<h1>Vos informations :</h1>
+<!--<div *ngIf="user; else notAuthenticated">-->
+<div id="catalog" *ngIf="user">
+    <p>Nom : </p>{{ user.nom }}
+    <p>Prénom : </p>{{ user.prenom }}
+    <p>Adresse : </p>{{ user.adresse }}, {{ user.codepostal }} {{ user.ville }}
+    <p>Téléphone : </p>{{ user.telephone }}
+    <p>Email : </p>{{ user.email }}
+</div>

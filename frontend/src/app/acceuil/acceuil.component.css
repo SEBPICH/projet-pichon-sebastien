@@ -1,0 +1,24 @@
+.bienvenue{
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.noAccount{
+    font-size: small;
+    color: #111; 
+  }
+
+.erreur{
+    color: #111;
+    font-size: small;
+}
+  
+.login {
+    font-family: 'San Francisco', 'Arial', sans-serif;
+}
+
+.welcome-container {
+    text-align: center;
+}

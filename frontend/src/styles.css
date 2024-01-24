@@ -1,0 +1,198 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: 'Raleway', cursive;
+  text-align: center;
+  background: url('https://stories.suzuki.fr/assets/images/capsules/3/quiz-bg.jpg') center/cover fixed;
+  background-attachment: fixed;
+  transform: translateZ(1);
+  will-change: transform;
+  transition: transform 0.5s ease-out;
+}
+
+  header {
+    background-color: #a6051a;
+    color: white;
+    padding: 20px;
+    
+  }
+
+  header h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2em; /* Adjust the font size as needed */
+  }
+  
+
+  nav {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+    color: #ffeb00;
+  }
+  
+  .search-container, .product-list-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+
+  .cart-title {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .search-container {
+    width: 48%; 
+    text-align: left; 
+    color: #fff; 
+  }
+  
+  .product-list-container {
+    width: 48%;
+    text-align: left;
+  }
+  
+  .search-container h2, .product-list-container h2 {
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;   
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  .results-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 48%;
+    text-align: left; 
+    font-family: 'Raleway', cursive; 
+  }
+  
+  .results-container h3 {
+    font-size: 24px; 
+  }
+  
+  .results-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .results-container ul li {
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+  
+  #noResults {
+    color: #777;
+  }
+  
+  .cart-button {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    padding: 15px 30px;
+    background-color: #ffeb00; 
+    color: #111;
+    border: #111 2px solid;
+    border-radius: 50px;
+    font-family: 'Raleway', cursive;
+    cursor: pointer; 
+  }
+
+  .cart-button:hover {
+   position: absolute;
+    top: 20px; 
+    right: 20px;
+    padding: 15px 30px;
+    background-color: #FFF; 
+    color: #111;
+    border-radius: 50px;
+    font-family: 'Raleway', cursive;
+    cursor: pointer; 
+}
+
+
+
+button {
+  background-color: #111; /* Couleur de bouton verte */
+  color: #fff; /* Couleur de texte pour le bouton */
+  font-weight: bold;
+  padding: 8px 16px;
+  border: #fff 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFEB00; /* Couleur de survol pour le bouton */
+  color: #111;
+  border: #111 2px solid;
+}
+
+#connection{
+  margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', cursive; 
+    
+}
+
+#bonjour{
+  margin: 10px;
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.cdk-global-overlay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

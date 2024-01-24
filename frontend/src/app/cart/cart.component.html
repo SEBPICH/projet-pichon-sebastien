@@ -1,0 +1,17 @@
+<div class="cart-title">Votre panier <i class="fas fa-shopping-cart"></i> ({{ (liste$ | async)?.length || 0 }}):
+  <br/><div id="total-prix">Total à payer : {{ totalPrice | thousandsSeparator }}€</div>
+</div>
+
+<div id="MessageDelete">{{ message }}</div>
+<div id="container" *ngFor="let p of liste$ | async">
+  <div id="catalog">
+    <img [src]="p.image_url" alt="{{ p.name }} Image"/>
+    <div class="product-info">
+      <h4>{{ p.name }}</h4>
+      <h5>{{ p.price }}€</h5>
+      <button id="delete" (click)="delFormCart(p)"> Supprimer </button>
+    </div>
+  </div>
+</div>
+<button id="payment" (click)="showOrderSummary()">Valider et payer ({{totalPrice | thousandsSeparator}} €)</button>
+<button (click)="clearCart()">Vider le panier</button>

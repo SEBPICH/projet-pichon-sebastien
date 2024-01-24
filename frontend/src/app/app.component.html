@@ -1,0 +1,15 @@
+
+<app-tetiere></app-tetiere>
+
+<br/>
+<div *ngIf="!(sharedService.goToInscription$ | async)">
+    <app-acceuil></app-acceuil>
+
+</div>
+
+<div *ngIf="(sharedService.goToInscription$ | async)">
+  <app-inscription></app-inscription>
+</div>
+<br/>
+
+<app-footer></app-footer>

@@ -1,0 +1,16 @@
+.error-message {
+    color: red;
+    font-size: 0.4em; 
+    margin-top: -1px;
+  }
+
+h1 {
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em; /* Adjust the font size as needed */
+  }
+
+  .redirection{
+    color:#fff;
+  }

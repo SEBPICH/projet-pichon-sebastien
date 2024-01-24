@@ -1,0 +1,25 @@
+<div *ngIf="!cnx" class="welcome-container">
+        <label class="bienvenue">
+            Bienvenue sur le Scuderia Ferrari Store ! Connectez-vous pour accéder aux produits.
+        </label>
+        <div id="connection">
+            <label class="login" for="login" placeholder="Renseignez votre identifiant">Login : </label>
+            <input [(ngModel)]="login" /><br /><br />
+            <label class="login" for="password" placeholder="Renseignez votre mot de passe">Password : </label>
+            <input [(ngModel)]="password" type="password" /><br />
+        <div *ngIf="!cnx && loginError">
+            <label class="erreur">Identifiants incorrects. Veuillez réessayer.</label>
+        </div>
+        <br />
+        <button (click)="connexion()">Connexion</button>
+        <br/>
+        <br/>
+        <label class="noAccount">Pas encore de compte ? </label>
+        <br/>
+        <button (click)="inscription()">Créer un compte</button>
+        </div>
+    </div>
+    <div *ngIf="cnx">
+        <router-outlet></router-outlet>
+</div>
+

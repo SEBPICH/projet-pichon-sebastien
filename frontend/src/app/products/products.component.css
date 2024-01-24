@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Couleur de fond légère */
+  color: #333; /* Couleur de texte principale */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  color: #fff; 
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#catalog {
+  width: 25%;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd; 
+  border-radius: 0px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+#catalog img {
+  object-fit : cover;
+  width: 100%;
+  max-height: 150px;
+}
+
+#catalog h4 {
+  text-transform: uppercase;
+  color: #a6051a;
+  font-weight: bolder;
+  margin: 0.8em;
+}
+
+#catalog h5 {
+  font-weight:normal;
+  margin: 0.5em;
+}
+
+#category {
+  font-size: 10px;
+  font-weight: lighter;
+  min-height: 70px;
+  text-align: left;
+  margin: 0 auto;
+  vertical-align: text-top;
+}
+
+button {
+  background-color: #111; /* Couleur de bouton verte */
+  color: #fff; /* Couleur de texte pour le bouton */
+  font-weight: bold;
+  padding: 8px 16px;
+  border: #111 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFEB00; /* Couleur de survol pour le bouton */
+  color: #111;
+  border: #111 2px solid;
+}
+
+div{
+  font-family: 'San Francisco', 'Arial', sans-serif;
+  align-items: center;
+}
+
+#MessageAdd{
+  background-color: #FFEB00; 
+  color: #111;
+  display: flex;
+  font-size: larger;
+  font-weight: bolder;
+  justify-content: center; 
+  align-items: center;
+}
+  

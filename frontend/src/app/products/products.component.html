@@ -1,0 +1,18 @@
+<br />
+<label for="recherche">Recherche :</label>
+<input [(ngModel)]="recherche" name="recherche" (ngModelChange)="searchProducts()" />
+<br /><br />
+<div id="nbProduct"></div>
+<div id="MessageAdd"></div>
+<div id="container" *ngIf="products$ | async as products">
+  <div id="catalog" *ngFor="let p of products | filter: recherche">
+    <div>
+      <img [src]="p.image_url" alt="{{ p.name }} Image"/>
+    </div>
+    <h4>{{ p.name }}</h4>
+    <h5>{{ p.price }} €</h5>
+    <div id="category">{{ p.description }}</div>
+  <br/>
+    <div><button (click)="addCart(p)"> Ajouter au panier </button></div>
+  </div>
+</div>
